@@ -2,26 +2,217 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi GitHub</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Portafolio Oliver Rosas González</title>
+    <!--  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/person3232.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/person3232.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/person3232.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/person3232.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/person3232.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/person3232.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/person3232.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/person3232.png">
+    <link rel="shortcut icon" href="http://mywebsiteurl/images/favicon.ico" type="image/ico" /> -->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet" />
+    <!--load all styles -->
 </head>
 
-<body>
-    <div class="container main-contianer">
-        <h1>Mi sitio</h1>
-        <hr>
-        <p>
-            Occaecat ea Lorem sint tempor pariatur consectetur est ex exercitation labore ullamco ut. Nisi cupidatat ex consectetur occaecat duis dolore voluptate elit non et labore irure do. Exercitation incididunt esse minim ex esse proident ad amet. Minim aliqua
-            ullamco enim enim sunt. Dolor dolor sunt eu nostrud esse nostrud. Proident nisi nostrud deserunt exercitation enim mollit commodo. Consequat deserunt nisi qui fugiat ipsum sunt non sunt laborum incididunt mollit esse laboris pariatur. Non
-            culpa ut aute consectetur labore qui duis cupidatat. Officia eu enim nisi consequat et cillum. Aute minim fugiat in dolor labore excepteur eiusmod commodo commodo nostrud nostrud. Lorem elit culpa fugiat aute ipsum id consequat cupidatat nostrud
-            quis. Anim nisi velit nulla quis qui. Aliquip ea pariatur dolor minim irure do nulla ullamco cupidatat sit aute voluptate. Minim qui dolor fugiat sunt cillum. Duis excepteur incididunt velit id proident elit. In ad anim Lorem id deserunt est
-            aliquip in incididunt elit ipsum. Enim laborum aliquip tempor duis ullamco velit adipisicing. Eiusmod cillum consectetur enim laborum et laboris consequat est laborum duis dolor Lorem fugiat id. Nulla esse in duis nisi minim. Labore aliquip
-            labore sint ut veniam quis velit do sunt aliqua commodo sunt eiusmod. Reprehenderit magna do eiusmod et ut ea cupidatat. Duis sint ex nisi mollit. Labore velit aliqua exercitation labore quis ea.
-        </p>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about" style="color: white; font-weight: bold;">Acerca de mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services" style="color: white; font-weight: bold;">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact" style="color: white; font-weight: bold;">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="demo" style="max-width: 1400px; padding: 0em;">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <h1 class="main-title">Oliver Rosas González</h1>
+                <h3 class="sub-title">Desarrollador TI</h3>
+                <div class="icons-header">
+                    <div class="row">
+                        <a aria-label="Send email" href="mailto:oliverrosasg@gmail.com"><span style="font-size: 48px; color: whitesmoke; padding-right: 1em;"><i class="fas fa-envelope"></i></span></a>
+                        <a aria-label="My Instagram" target="_blank" href="https://www.linkedin.com/in/oliverrosasgonz%C3%A1lez/"><span style="font-size: 48px; color: whitesmoke; padding-right: 1em;"><i class="fab fa-linkedin"></i></span></a>
+                        <a aria-label="My Github" target="_blank" href="https://github.com/rogs-lv"><span style="font-size: 48px; color: whitesmoke;"><i class="fab fa-github"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="user-details">
+                    <br>
+                    <!-- <img id="photo" alt="photo" src="https://raw.githubusercontent.com/WillArevalo/WillArevalo.github.io/master/photo.png" style="border-radius: 50%;"> -->
+                    <br>
+                    <h2>Oliver Rosas González</h2>
+                    <h3>Desarrollador TI • Puebla, Pue • oliverrosasg@gmail.com</h3>
+                    <p><b>Interes por nuevas tecnologías | Proactividad |  Adaptabilidad</b></p>
+                    <h6>"El 90% del éxito se basa simplemente en insistir"<br><small>Woody Allen</small></h6>
+                    <br>
+                    <h3> Mi Experiencia </h3>
+                    <p class="text-justify">
+                        Como Desarrollador TI en <a href="https://www.eviciti.com.mx/"> Eviciti Thenologies</a>, durante 4 años. Tuve la oportunidad de participar en proyectos con diferentes giros en la industria tales como; WMS (Warehouse Managment System),
+                        Pedidos Web, CRM Web, Aplicación de Liberación de PT, Viaticos, Servicios REST y Aplicación para Notificación de Facturas. Muchos de ellos girando entorno al ERP SAP business one y SAP business one for Hana<br> Mi buen desempeño
+                        y compromiso, me permitieron formar parte del proyecto aplicado a busqueda en redes sociales para la PFP (Policía Federal Preventiva). <br> Me caracterizo principalmente por ser percistente ante nuevos retos y escenarios que se
+                        presentan. En más de una ocasión tuve que ser creativo y dedicar tiempo extra para lograr completar mis objetivos, que al final se reflejaron en hacer que WMS llegara a ser en poco tiempo uno de los productos mas vendidos, estables
+                        e implementados. Además de ganar la confianza para el desarrollo de otros proyectos de manera individual y fortalecer el trabajo en equipo.
+                    </p>
+                    <p> Habilidades: Inclinación por trabajo en equipo, Flexibilidad, Capacidad de concentración, Resiliencia</p>
+                </div>
+                <div class="container">
+                    <div class="card-columns d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Front-End</h5>
+                                <div class="text-center">
+                                    <img src="assets/AngularJS.svg" data-toggle="tooltip" data-placement="top" title="AngurlarJS" alt="" style="width: 128px !important;height: 64px !important;" />
+                                    <img src="assets/CSS3.svg" data-toggle="tooltip" data-placement="top" title="CSS" alt="" style="width: 60px !important;height: 60px !important;" />
+                                    <img src="assets/HTML5.svg" data-toggle="tooltip" data-placement="top" title="HTML5" alt="" style="width: 60px !important;height: 60px !important;" />
+                                    <img src="assets/JavaScript.svg" data-toggle="tooltip" data-placement="top" title="Java Script" alt="" style="width: 60px !important;height: 60px !important;" />
+                                    <img src="assets/Bootstrap.svg" data-toggle="tooltip" data-placement="top" title="Bootstrap" style="width: 60px !important;height: 60px !important;" />
+                                    <img src="assets/Angular.svg" data-toggle="tooltip" data-placement="top" title="Angurlar" alt="" style="width: 128px !important;height: 64px !important;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Back-End</h5>
+                                <div class="text-center">
+                                    <img src="assets/csharp.svg" data-toggle="tooltip" data-placement="top" title="C#" alt="">
+                                    <img src="assets/NodeJS.svg" data-toggle="tooltip" data-placement="top" title="NodeJS" alt="" style="width: 60px !important;height: 60px !important;">
+                                    <img src="assets/img/socketIO.png" data-toggle="tooltip" data-placement="top" title="SocketIO" alt="" style="width: 60px !important;height: 60px !important;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Herramientas</h5>
+                                <div class="text-center">
+                                    <img src="assets/Visual Studio.svg" data-toggle="tooltip" data-placement="top" title="Visual Studio" alt="" style="width: 60px !important;height: 60px !important;">
+                                    <img src="assets/GitHub.svg" data-toggle="tooltip" data-placement="top" title="GitHub" alt="" style="width: 60px !important;height: 60px !important;">
+                                    <img src="assets/Git.svg" data-toggle="tooltip" data-placement="top" title="Git" alt="" style="width: 60px !important;height: 60px !important;">
+                                    <img src="assets/TFS.svg" data-toggle="tooltip" data-placement="top" title="Team Foundation Server" alt="" style="width: 60px !important;height: 60px !important;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card-columns d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Gestores de base de datos</h5>
+                                <div class="text-center">
+                                    <img src="assets/sql.svg" data-toggle="tooltip" data-placement="top" title="SQL Server" alt="" style="width: 60px !important;height: 60px !important;">
+                                    <img src="assets/mysql.svg" data-toggle="tooltip" data-placement="top" title="MySQL" alt="">
+                                    <img src="assets/img/SAP-Business-One-Hana.jpg" data-toggle="tooltip" data-placement="top" title="Sap HANA DB" alt="" style="width: 100px !important;/*! height: 60px !important; */">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">SDK</h5>
+                                <div class="text-center">
+                                    <img src="assets/img/Flutter.png" data-toggle="tooltip" data-placement="top" title="Flutter" alt="" style="/*! width: 60px !important; */height: 70px !important;">
+                                    <img src="assets/img/Sap-B1-Logo-png.png" data-toggle="tooltip" data-placement="top" title="Sap Business One" alt="" style="width: 90px !important;/*! height: 60px !important; */">
+                                    <img src="assets/img/SAP-Business-One-Hana.jpg" data-toggle="tooltip" data-placement="top" title="Sap Business One for HANA" alt="" style="width: 100px !important;/*! height: 60px !important; */">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Proyectos Destacados</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact us</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <p>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <!-- 
+              <a class="button" href="/certificates.html"> <i class="devicon-redis-plain" style="color:#ffd700;"></i> &nbsp;Certificates </a>
+            <a class="button" href="https://github.com/WillArevalo/"> <i class="devicon-github-plain"></i> &nbsp;Projects </a> 
+          -->
+        </p>
+        <!-- <p>© William Arevalo 2020 | Build with <i class="fa fa-heart" style="color:#ef0000;" aria-hidden="true"></i> </p> -->
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
