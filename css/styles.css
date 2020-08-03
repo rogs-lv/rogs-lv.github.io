@@ -90,6 +90,10 @@
     width: 200px;
 }
 
+.txtjustify {
+    text-align: justify;
+}
+
 @media only screen and (max-width: 768px) {
     .demo .main-title {
         font-size: 3em;
