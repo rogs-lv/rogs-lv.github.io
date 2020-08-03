@@ -69,6 +69,27 @@
     margin: 10px auto;
 }
 
+.tcolor {
+    color: rgb(46, 116, 181);
+}
+
+.h1Color {
+    color: rgb(13, 71, 126);
+}
+
+.colorArrow {
+    background-color: #5e5e5e;
+    border-radius: 40%;
+}
+
+.colorCaption {
+    color: black;
+}
+
+#photo {
+    width: 200px;
+}
+
 @media only screen and (max-width: 768px) {
     .demo .main-title {
         font-size: 3em;
