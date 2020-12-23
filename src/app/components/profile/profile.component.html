@@ -1,0 +1,53 @@
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="user-details">
+                <br>
+                <img id="photo" alt="photo" src="assets/img/perfil1.jpeg" style="border-radius: 50%;">
+                <br>
+                <h2>Oliver Rosas González</h2>
+                <h3>Desarrollador TI • Puebla, Pue • oliverrosasg@gmail.com</h3>
+                <p><b>Interes por nuevas tecnologías | Proactividad |  Adaptabilidad</b></p>
+                <h6>"El 90% del éxito se basa simplemente en insistir"<br><small>Woody Allen</small></h6>
+                <br>
+                <h3> Sobre mi</h3>
+                <p class="text-justify">
+                    Como Desarrollador TI, durante mas 4 años. Tuve la oportunidad de participar en proyectos con diferentes giros en la industria, algunos entorno a SAP business one y SAP business one for Hana.<br> Me caracterizo principalmente por ser
+                    percistente ante nuevos retos. En más de una ocasión tuve que ser creativo y dedicar tiempo extra para lograr completar mis objetivos, que al final se reflejaron en completar de manera satisfactoria mis proyectos. Además de ganar la
+                    confianza para el desarrollo de otros proyectos de manera individual y fortalecer el trabajo en equipo.
+                </p>
+                <!-- <p> Habilidades: Inclinación por trabajo en equipo, Flexibilidad, Capacidad de concentración, Resiliencia</p> -->
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-columns d-flex justify-content-center">
+                            <div *ngFor="let cd of cards" class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">{{cd.title}}</h5>
+                                    <div class="text-center">
+                                        <img *ngFor="let image of cd.images" [src]="image.src" placement="top" ngbTooltip="{{image.tooltip}}" alt="" [ngStyle]="{ 'width': image.style.width, 'height': image.style.height }" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-columns d-flex justify-content-center">
+                            <div *ngFor="let cd of cards2" class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">{{cd.title}}</h5>
+                                    <div class="text-center">
+                                        <img *ngFor="let image of cd.images" [src]="image.src" placement="top" ngbTooltip="{{image.tooltip}}" alt="" [ngStyle]="{ 'width': image.style.width, 'height': image.style.height }" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
