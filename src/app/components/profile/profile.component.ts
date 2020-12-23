@@ -29,7 +29,7 @@ export class ProfileComponent implements OnInit {
       },
       { 
         title: 'Back-End', 
-        images: [{src: 'assets/csharp.svg', style: styleImg, tooltip: 'C#'}, {src: 'assets/NodeJS.svg', style: styleImg, tooltip: 'NodeJS'}, {src: 'assets/img/socketIO.png', style: styleImg, tooltip: 'SocketIO'}]
+        images: [{src: 'assets/csharp.svg', style: styleImg, tooltip: 'C#'}, {src: 'assets/NodeJS.svg', style: styleImg, tooltip: 'NodeJS'}, {src: 'assets/img/socketIO.svg', style: styleImg, tooltip: 'SocketIO'}]
       },
       { 
         title: 'Herramientas', 
@@ -39,11 +39,11 @@ export class ProfileComponent implements OnInit {
     const cards2 = [
       { 
         title: 'Gestores de base de datos', 
-        images: [{src: 'assets/sql.svg', style: styleImg, tooltip: 'SQL Server'}, {src: 'assets/mysql.svg', style: styleImg, tooltip: 'MySQL'}, {src: 'assets/img/SAP-Business-One-Hana.jpg', style: styleImgSpe, tooltip: 'SAP Hana'}]
+        images: [{src: 'assets/sql.svg', style: styleImg, tooltip: 'SQL Server'}, {src: 'assets/mysql.svg', style: styleImg, tooltip: 'MySQL'}, {src: 'assets/img/SAPHana.svg', style: styleImgSpe, tooltip: 'SAP Hana'}]
       },
       { 
         title: 'SDK', 
-        images: [{src: 'assets/img/Flutter.png', style: styleImgSpe, tooltip: 'Flutter'}, {src: 'assets/img/Sap-B1-Logo-png.png', style: styleImgSpe, tooltip: 'SAP B1'}, {src: 'assets/img/SAP-Business-One-Hana.jpg', style: styleImgSpe, tooltip: 'SAP B1 Hana'}]
+        images: [{src: 'assets/img/Flutter.svg', style: styleImgSpe, tooltip: 'Flutter'}, {src: 'assets/img/SAPB1.svg', style: styleImgSpe, tooltip: 'SAP B1'}, {src: 'assets/img/SAPHana.svg', style: styleImgSpe, tooltip: 'SAP B1 Hana'}]
       }
     ];
     this.cards = card;
