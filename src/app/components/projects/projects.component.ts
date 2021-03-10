@@ -16,7 +16,8 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
     this.onCreateWMS();
     this.onCreatePedidosWeb();
-    this.onCreateCRMWeb();
+    this.onCreateCRMWebEviciti();
+    this.onCreateCRMWebCVMSales();
     this.onCreatePT();
     this.onCreateViaticos();
     this.onCreateAPIRestPedidos();
@@ -110,7 +111,7 @@ export class ProjectsComponent implements OnInit {
     pro1.addImage(new Imagen('','assets/proyectos/PedidosWeb/Pedidos8.png'));
     this.projects.push(pro1);
   }
-  onCreateCRMWeb() {
+  onCreateCRMWebEviciti() {
     const pro1 = new Project();
     pro1.titl = 'CRM Web';
     pro1.desc = 'Es una aplicación web que permite gestionar y dar seguimiento a la relacion establecida con los clientes. Esta basado en el CRM de SAP B1';
@@ -128,18 +129,64 @@ export class ProjectsComponent implements OnInit {
     pro1.addModule(mod3);
     pro1.addModule(mod4);
     
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM0.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM1.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM2.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM3.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM31.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM32.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM33.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM34.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM35.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM4.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM5.png'));
-    pro1.addImage(new Imagen('','assets/proyectos/CRM/CRM6.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM0.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM1.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM2.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM3.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM31.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM32.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM33.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM34.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM35.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM4.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM5.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/Eviciti/CRM6.png'));
+    this.projects.push(pro1);
+  }
+  onCreateCRMWebCVMSales() {
+    const pro1 = new Project();
+    pro1.titl = 'CRM Web SalesCVM';
+    pro1.desc = 'Es una aplicación web en una nueva versión con nueva funcionalidad y nuevos módulos que permite gestionar aun mejor los documentos proporcionando seguimiento a la relacion establecida con los clientes. Esta basado en el CRM de SAP B1';
+    const mod1 = new Module();
+    mod1.nameMod = 'Dashboard';
+    const mod2 = new Module();
+    mod2.nameMod = 'Socios de Negocios';
+    const mod3 = new Module();
+    mod3.nameMod = 'Artículos';
+    const mod4 = new Module();
+    mod4.nameMod = 'Cotizaciones';
+    const mod5 = new Module();
+    mod5.nameMod = 'Pedidos/Pedidos desde Cotizaciones';
+    const mod6 = new Module();
+    mod6.nameMod = 'CRM - Oportunidades/Actividades';
+    const mod7 = new Module();
+    mod7.nameMod = 'Reportes';
+
+    pro1.addModule(mod1);
+    pro1.addModule(mod2);
+    pro1.addModule(mod3);
+    pro1.addModule(mod4);
+    pro1.addModule(mod5);
+    pro1.addModule(mod6);
+    pro1.addModule(mod7);
+    
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM0.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM2.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM3.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM4.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM5.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM6.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM7.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM8.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM9.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM10.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM12.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM13.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM14.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM15.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM16.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM17.png'));
+    pro1.addImage(new Imagen('','assets/proyectos/CRM/CVMSales/SalesCVM18.png'));
     this.projects.push(pro1);
   }
   onCreatePT() {
