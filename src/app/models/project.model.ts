@@ -1,7 +1,6 @@
-import { images } from './card.model';
 export class Project {
-    private title: string;
-    private descript: string;
+    private title: string = '';
+    private descript: string = '';
     private modulos: Array<Module>;
     private images: Array<Imagen>;
     
@@ -40,7 +39,7 @@ export class Project {
 };
 
 export class Module {
-    private NameModule: string;
+    private NameModule: string = '';
     private SubModule: Array<SubModule>;
     
     get nameMod(): string {
@@ -64,7 +63,7 @@ export class Module {
 }
 
 export class SubModule {
-    NameSubModule: string;
+    NameSubModule: string = '';
 }
 
 export class Imagen {

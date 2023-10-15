@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { Imagen, Module, Project, SubModule } from 'src/app/models/project.model';
+import { Component } from '@angular/core';
+import { Imagen, Module, Project } from 'src/app/models/project.model';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
   projects: Array<Project>;
 
   constructor() {
@@ -23,33 +23,33 @@ export class ProjectsComponent implements OnInit {
     this.onCreateAPIRestPedidos();
     this.onCreateSboPrice();
     this.onCreateAPIRestInfo();
-    this.onCreateAutomata();
+    //this.onCreateAutomata();
     this.onCreateCotizadorWeb();
   }
 
   onCreateWMS() {
     const pro1 = new Project();
     pro1.titl = 'WMS (Warehouse Managment System)';
-    pro1.desc = 'WMS es una aplicación web accesible desde dispositivos Handheld/PDA u ordenadores para gestion de inventarios';
+    pro1.desc = 'WMS is a web application accessible from Handheld/PDA devices or computers for inventory management.';
     
     const mod = new Module();
-    mod.nameMod = 'Inventario';
-    mod.addSubMod('Traspaso');
-    mod.addSubMod('Calidad');
-    mod.addSubMod('Recuento de Inventario');
-    mod.addSubMod('Recibo de traspaso');
-    mod.addSubMod('Traspaleo');
+    mod.nameMod = 'Inventory';
+    mod.addSubMod('Transfer');
+    mod.addSubMod('Quality');
+    mod.addSubMod('Inventory Count');
+    mod.addSubMod('Transfer receipt');
+    mod.addSubMod('Pallet transfer');
     const mod2 = new Module();
-    mod2.nameMod = 'Ventas';
-    mod2.addSubMod('Remision/Embarque');
-    mod2.addSubMod('Validaciónde embarque (poka-yoke)');
+    mod2.nameMod = 'Sales';
+    mod2.addSubMod('Shipments');
+    mod2.addSubMod('Shipment validation (poka-yoke)');
     const mod3 = new Module();
-    mod3.nameMod = 'Producción';
-    mod3.addSubMod('Envio a producción');
-    mod3.addSubMod('Validación de producción');
-    mod3.addSubMod('Recibo de producción');
-    mod3.addSubMod('Envío de Scrap');
-    mod3.addSubMod('Emision y Recibo de Producción');
+    mod3.nameMod = 'Production';
+    mod3.addSubMod('Shipment to production');
+    mod3.addSubMod('Production validation');
+    mod3.addSubMod('Production receipt');
+    mod3.addSubMod('Waste shipment');
+    mod3.addSubMod('Emission and Production Receipt');
 
     pro1.addModule(mod);
     pro1.addModule(mod2);
@@ -88,14 +88,14 @@ export class ProjectsComponent implements OnInit {
   }
   onCreatePedidosWeb() {
     const pro1 = new Project();
-    pro1.titl = 'Pedidos Web';
-    pro1.desc = 'Es un aplicación web que permite al usuario crear pedidos para ser integrados como una orden de venta en SAP B1';
+    pro1.titl = 'Web Ordering';
+    pro1.desc = 'It is a web application that allows the user to create orders to be integrated as a sales order in SAP B1.';
     const mod = new Module();
-    mod.nameMod = 'Generación Pedidos';
+    mod.nameMod = 'Order Generation';
     const mod2 = new Module();
-    mod2.nameMod = 'Consulta Pedidos';
+    mod2.nameMod = 'Consult orders';
     const mod3 = new Module();
-    mod3.nameMod = 'Reimpresion de Documentos';
+    mod3.nameMod = 'Reprinting of documents';
     
     pro1.addModule(mod);
     pro1.addModule(mod2);
@@ -113,16 +113,16 @@ export class ProjectsComponent implements OnInit {
   }
   onCreateCRMWebEviciti() {
     const pro1 = new Project();
-    pro1.titl = 'CRM Web';
-    pro1.desc = 'Es una aplicación web que permite gestionar y dar seguimiento a la relacion establecida con los clientes. Esta basado en el CRM de SAP B1';
+    pro1.titl = 'Web CRM';
+    pro1.desc = 'It is a web application that allows you to manage and track the relationship established with customers. It is based on SAP CRM B1';
     const mod = new Module();
-    mod.nameMod = 'Oportunidades';
+    mod.nameMod = 'Opportunities';
     const mod2 = new Module();
-    mod2.nameMod = 'Actividades';
+    mod2.nameMod = 'Activities';
     const mod3 = new Module();
-    mod3.nameMod = 'Cotizaciones';
+    mod3.nameMod = 'Quotations';
     const mod4 = new Module();
-    mod4.nameMod = 'Pedidos';
+    mod4.nameMod = 'Orders';
     
     pro1.addModule(mod);
     pro1.addModule(mod2);
@@ -145,22 +145,22 @@ export class ProjectsComponent implements OnInit {
   }
   onCreateCRMWebCVMSales() {
     const pro1 = new Project();
-    pro1.titl = 'CRM Web SalesCVM';
-    pro1.desc = 'Es una aplicación web en una nueva versión con nueva funcionalidad y nuevos módulos que permite gestionar aun mejor los documentos proporcionando seguimiento a la relacion establecida con los clientes. Esta basado en el CRM de SAP B1';
+    pro1.titl = 'CRM SalesCVM';
+    pro1.desc = 'It is a web application in a new version with new functionality and new modules that allows to manage even better the documents providing follow-up to the relationship established with customers. It is based on SAP CRM B1';
     const mod1 = new Module();
     mod1.nameMod = 'Dashboard';
     const mod2 = new Module();
-    mod2.nameMod = 'Socios de Negocios';
+    mod2.nameMod = 'Business Partners';
     const mod3 = new Module();
-    mod3.nameMod = 'Artículos';
+    mod3.nameMod = 'Items';
     const mod4 = new Module();
-    mod4.nameMod = 'Cotizaciones';
+    mod4.nameMod = 'Quotations';
     const mod5 = new Module();
-    mod5.nameMod = 'Pedidos/Pedidos desde Cotizaciones';
+    mod5.nameMod = 'Orders/Orders from Quotations';
     const mod6 = new Module();
-    mod6.nameMod = 'CRM - Oportunidades/Actividades';
+    mod6.nameMod = 'CRM - Opportunities/Activities';
     const mod7 = new Module();
-    mod7.nameMod = 'Reportes';
+    mod7.nameMod = 'Reports';
 
     pro1.addModule(mod1);
     pro1.addModule(mod2);
@@ -191,10 +191,10 @@ export class ProjectsComponent implements OnInit {
   }
   onCreatePT() {
     const pro1 = new Project();
-    pro1.titl = 'Liberación de PT';
-    pro1.desc = 'Liberación de PT es una aplicación web clonando la funcionalidad de add-on en SAP que permite generar Emisiones y Recibos de Producción';
+    pro1.titl = 'PT Release';
+    pro1.desc = 'PT Release is a web application cloning the add-on functionality in SAP that allows to generate Production Issues and Receipts.';
     const mod = new Module();
-    mod.nameMod = 'Producto Terminado';
+    mod.nameMod = 'Finished Product';
     
     pro1.addModule(mod);
     
@@ -209,12 +209,12 @@ export class ProjectsComponent implements OnInit {
   }
   onCreateViaticos() {
     const pro1 = new Project();
-    pro1.titl = 'Viaticos';
-    pro1.desc = 'Es una aplicación web para smartphone que registra los gastos hechos por el usuario';
+    pro1.titl = 'Travel Expenses';
+    pro1.desc = 'It is a web application for smartphones that records the expenses made by the user.';
     const mod = new Module();
-    mod.nameMod = 'Registro';
+    mod.nameMod = 'Register';
     const mod2 = new Module();
-    mod2.nameMod = 'Comprobaciones';
+    mod2.nameMod = 'Validations';
     
     pro1.addModule(mod);
     pro1.addModule(mod2);
@@ -226,10 +226,10 @@ export class ProjectsComponent implements OnInit {
   }
   onCreateAPIRestPedidos() {
     const pro1 = new Project();
-    pro1.titl = 'API Rest para integración de pedidos';
-    pro1.desc = 'Una API REST para generar documentos (ordenes de venta) en SAP B1';
+    pro1.titl = 'API Rest for order integration';
+    pro1.desc = 'A REST API to generate documents (sales orders) in SAP B1';
     const mod = new Module();
-    mod.nameMod = 'crearOrden';
+    mod.nameMod = 'createOrder';
         
     pro1.addModule(mod);
     
@@ -240,11 +240,11 @@ export class ProjectsComponent implements OnInit {
   onCreateSboPrice() {
     const pro1 = new Project();
     pro1.titl = 'SboPrice';
-    pro1.desc = 'Aplicación Web para creación de cotizaciones y consulta de precios para vendedores';
+    pro1.desc = 'Web application for quote creation and price inquiry for sellers';
     const mod = new Module();
-    mod.nameMod = 'Cotizaciones';
+    mod.nameMod = 'Quotations';
     const mod2 = new Module();
-    mod2.nameMod = 'Precios';
+    mod2.nameMod = 'Prices';
         
     pro1.addModule(mod);
     pro1.addModule(mod2);
@@ -259,8 +259,8 @@ export class ProjectsComponent implements OnInit {
   }
   onCreateAPIRestInfo() {
     const pro1 = new Project();
-    pro1.titl = 'API Rest para gestion de información';
-    pro1.desc = 'Una API REST para consulta, creacióm y actualización de información en SAP B1';
+    pro1.titl = 'API Rest for information management';
+    pro1.desc = 'A REST API for querying, creating and updating information in SAP B1';
     
     const mod = new Module();
     const mod2 = new Module();
@@ -337,16 +337,16 @@ export class ProjectsComponent implements OnInit {
   }
   onCreateCotizadorWeb(){
     const pro1 = new Project();
-    pro1.titl = 'Cotizador Web';
-    pro1.desc = ' Es una aplicación web que permite generar ordenes de fabricación, componenes (artículos) o sub componetes, asígnados a un proyecto, actividades y control de usuario y el acceso a cada pestaña basado en el perfil. ';
+    pro1.titl = 'Web Quotation';
+    pro1.desc = 'It is a web application that allows to generate manufacturing orders, components (items) or sub-components, assigned to a project, activities and user control and access to each tab based on the profile.';
     const mod = new Module();
-    mod.nameMod = 'Datos Generales';
+    mod.nameMod = 'General Information';
     const mod2 = new Module();
-    mod2.nameMod = 'Check Fabricación';
+    mod2.nameMod = 'Check Manufacturing';
     const mod3 = new Module();
-    mod3.nameMod = 'Actividades';
+    mod3.nameMod = 'Activities';
     const mod4 = new Module();
-    mod4.nameMod = 'Usuarios';
+    mod4.nameMod = 'Users';
         
     pro1.addModule(mod);
     pro1.addModule(mod2);

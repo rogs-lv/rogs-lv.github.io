@@ -8,10 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Portafolio';
   
-  onActivateProfile(event) {
+  onActivateProfile(event:any) {
     window.scroll(0,700);
   }
-  onActivateProject(event) {
+  onActivateTech(event:any) {
+    window.scroll(0,1100);
+  }
+  onActivateProject(event:any) {
     window.scroll(0,1800);
+  }
+  onActivateContact(event:any) {
+    window.scroll(0,4000);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { card } from 'src/app/models/card.model';
 
 @Component({
@@ -6,14 +6,22 @@ import { card } from 'src/app/models/card.model';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class ProfileComponent {
 
   cards: Array<card>;
   cards2: Array<card>;
+  cards3: Array<card>;
+  cards4: Array<card>;
+  sizeIconDapper = "2rem";
+  sizeIconSap = "4rem";
+  profileDev= "../../../assets/developer.svg"
+  awscert = "../../../assets/aws-certified-cloud-practitioner.png"
 
   constructor() { 
     this.cards = new Array<card>();
     this.cards2 = new Array<card>();
+    this.cards3 = new Array<card>();
+    this.cards4 = new Array<card>();
   }
 
   ngOnInit() {
@@ -21,32 +29,116 @@ export class ProfileComponent implements OnInit {
   }
   onFillCards() {
     const styleImg = { width: '60px', height: '60px'};
-    const styleImgSpe = { width: '100px'};
+    const sizeImg = "250px"
+    
     const card = [
       { 
-        title: 'Front-End', 
-        images: [{src: 'assets/AngularJS.svg', style: styleImg, tooltip: 'AngularJS'}, {src: 'assets/CSS3.svg', style: styleImg, tooltip: 'CSS3'}, {src: 'assets/HTML5.svg', style: styleImg, tooltip: 'HTML5'}, {src: 'assets/JavaScript.svg', style: styleImg, tooltip: 'JS'}, {src: 'assets/Bootstrap.svg', style: styleImg, tooltip: 'Bootstrap 4.5'}, {src: 'assets/Angular.svg', style: styleImg, tooltip: 'Angular'}]
+        text: "C# (Advanced)",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg",
+        maxWidth: sizeImg
       },
       { 
-        title: 'Back-End', 
-        images: [{src: 'assets/csharp.svg', style: styleImg, tooltip: 'C#'}, {src: 'assets/NodeJS.svg', style: styleImg, tooltip: 'NodeJS'}, {src: 'assets/img/socketIO.svg', style: styleImg, tooltip: 'SocketIO'}]
+        text: "Python (Basic)",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        maxWidth: sizeImg
       },
       { 
-        title: 'Herramientas', 
-        images: [{src: 'assets/Visual Studio.svg', style: styleImg, tooltip: 'Visual Studio'}, {src: 'assets/GitHub.svg', style: styleImg, tooltip: 'GitHub'}, {src: 'assets/Git.svg', style: styleImg, tooltip: 'Git'}, {src: 'assets/VisualStudioCode.svg', style: styleImg, tooltip: 'Visual Studio Code'}, {src: 'assets/TFS.svg', style: styleImg, tooltip: 'TFS'}]
-      }
+        text: ".NET Framework",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
+        maxWidth: sizeImg
+      },
+      { 
+        text: ".NET Core",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+        maxWidth: sizeImg
+      },
+      { 
+        text: "Angular 8",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg",
+        maxWidth: sizeImg
+      },
+      
     ];
-    const cards2 = [
+    const cardTwo = [
       { 
-        title: 'Gestores de base de datos', 
-        images: [{src: 'assets/sql.svg', style: styleImg, tooltip: 'SQL Server'}, {src: 'assets/mysql.svg', style: styleImg, tooltip: 'MySQL'}, {src: 'assets/img/SAPHana.svg', style: styleImgSpe, tooltip: 'SAP Hana'}]
+        text: "Angular JS",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+        maxWidth: sizeImg
       },
       { 
-        title: 'SDK', 
-        images: [{src: 'assets/img/Flutter.svg', style: styleImgSpe, tooltip: 'Flutter'}, {src: 'assets/img/SAPB1.svg', style: styleImgSpe, tooltip: 'SAP B1'}, {src: 'assets/img/SAPHana.svg', style: styleImgSpe, tooltip: 'SAP B1 Hana'}]
-      }
+        text: "dotCover",
+        source: "../../../assets/dotcover.svg",
+        maxWidth: sizeImg,
+      },
+      { 
+        text: "Jira",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+        maxWidth: sizeImg
+      },
+      { 
+        text: "Git",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
+        maxWidth: sizeImg
+      },
+      { 
+        text: "GitHub",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        maxWidth: sizeImg
+      },
     ];
-    this.cards = card;
-    this.cards2 = cards2;
+    const cardThree = [
+      { 
+        text: "Docker",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        maxWidth: sizeImg
+      },
+      { 
+        text: "Jenkis",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+        maxWidth: sizeImg
+      },
+      { 
+        text: "SQL Server",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg",
+        maxWidth: sizeImg
+      },
+      { 
+        text: "AWS",
+        source: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+        maxWidth: sizeImg
+      },
+      { 
+        text: "Postman",
+        source: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+        maxWidth: sizeImg
+      },
+    ]
+    const cardFour = [
+      { 
+        text: "Dapper",
+        source: "../../../assets/dapper.png",
+        maxWidth: sizeImg,
+        sizeIcon: "2rem",
+        mtSpecific: "2"
+      },
+      { 
+        text: "Sap Business One",
+        source: "../../../assets/sap-business-one-logo.svg",
+        maxWidth: sizeImg,
+        sizeIcon: "4rem",
+        mtSpecific: "3"
+      },
+      { 
+        text: "Splunk",
+        source: "../../../assets/splunk.svg",
+        maxWidth: sizeImg,
+        sizeIcon: "4rem",
+        mtSpecific: "3"      
+      },
+    ]
+    this.cards = card;   
+    this.cards2 = cardTwo; 
+    this.cards3 = cardThree;
+    this.cards4 = cardFour;
   }
 }

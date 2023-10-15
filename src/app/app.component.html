@@ -1,7 +1,25 @@
-<div style="width: 100%">
-    <div style="float:right; text-align: right;">
-        <button class="btn btnFloat" (click)="onActivateProfile($event)" placement="top" ngbTooltip="Acerca de mi"><span style="color: white; font-size: 3em;" class="fas fa-user-circle"><i></i></span></button>
-        <button class="btn btnFloat2" (click)="onActivateProject($event)" placement="top" ngbTooltip="Proyectos"><span style="color: white; font-size: 3em;" class="far fa-folder-open"><i></i></span></button>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">&#60;Oliver Rosas Gonzalez/&#62;</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" style=" cursor:pointer;" (click)="onActivateProfile($event)" placement="top">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style=" cursor:pointer;" (click)="onActivateTech($event)"placement="top">Technologies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style=" cursor:pointer;" (click)="onActivateProject($event)" placement="top">Projects</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" style=" cursor:pointer;" (click)="onActivateContact($event)" placement="top">Contact</a>
+        </li>          
+      </ul>
     </div>
-</div>
-<router-outlet></router-outlet>
+  </div>
+</nav>
+<router-outlet></router-outlet> 

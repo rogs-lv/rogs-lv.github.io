@@ -1,0 +1,16 @@
+.text-style {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.w-100 {
+    width: 100% !important;
+    height: 38vh;
+}
+
+.text-title{
+    color: #0060df;
+    font-weight: bold;
+}

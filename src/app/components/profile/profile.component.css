@@ -1,0 +1,31 @@
+.home-style {
+    height: 90vh;
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-around;
+}
+.text-home {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 200px 35px 35px 35px;
+    width: 350px;
+    height: 200px;
+}
+.social {
+    margin: 35px 35px 35px 35px;
+    width: 350px;
+    text-align: center;
+    /*height: 200px;*/
+}
+.text-home .p {
+    /* Center horizontally*/
+    text-align: center;
+}
+
+.text-style {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+}
